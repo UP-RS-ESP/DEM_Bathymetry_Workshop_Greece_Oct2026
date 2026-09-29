@@ -1,0 +1,2 @@
+gdalwarp   -cutline EasternCorinth_clip_epsg4326.gpkg -crop_to_cutline   -t_srs EPSG:32634   -tr 10 10 -r lanczos   -co COMPRESS=DEFLATE -co PREDICTOR=3 -co ZLEVEL=9 -co TILED=YES   /home/bodo/Downloads/COP10_Corinth_DEM_epsg4326.tif COP10_EastCorinth_10m_epsg32634.tif
+gdaldem hillshade COP10_EastCorinth_10m_epsg32634.tif COP10_EastCorinth_10m_epsg32634_hs.tif -co COMPRESS=DEFLATE -co ZLEVEL=9 -co PREDICTOR=2
